@@ -1,0 +1,9 @@
+# prettier config file
+.prettierrc
+
+# program output
+random_text/
+results/
+
+# python
+__pycache__/
