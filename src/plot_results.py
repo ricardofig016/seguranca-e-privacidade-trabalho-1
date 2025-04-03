@@ -26,6 +26,10 @@ def plot_results(aes, rsa, sha):
     plt.xscale("log")
     plt.xlabel("File Size (Bytes)")
     plt.ylabel("Time (µs)")
+    plt.xticks(
+        [8, 64, 512, 4096, 32768, 262144, 2097152],
+        [8, 64, 512, 4096, 32768, 262144, 2097152],
+    )
     plt.legend()
     plt.savefig("results/aes.png")
 
@@ -37,6 +41,7 @@ def plot_results(aes, rsa, sha):
     plt.xscale("log")
     plt.xlabel("File Size (Bytes)")
     plt.ylabel("Time (µs)")
+    plt.xticks([2, 4, 8, 16, 32, 64, 128], [2, 4, 8, 16, 32, 64, 128])
     plt.legend()
     plt.savefig("results/rsa.png")
 
@@ -47,6 +52,10 @@ def plot_results(aes, rsa, sha):
     plt.xscale("log")
     plt.xlabel("File Size (Bytes)")
     plt.ylabel("Time (µs)")
+    plt.xticks(
+        [8, 64, 512, 4096, 32768, 262144, 2097152],
+        [8, 64, 512, 4096, 32768, 262144, 2097152],
+    )
     plt.legend()
     plt.savefig("results/sha.png")
 
